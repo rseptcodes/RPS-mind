@@ -1,17 +1,18 @@
-✊ RPS Mind: Vanilla JS AI
+# 🧠 RPS Mind: Vanilla JS AI
 
 A lightweight, event-driven Rock Paper Scissors game built from scratch with Vanilla JavaScript, a custom Pub/Sub EventBus, and an adaptive CPU opponent.
 
-"CSS3" (https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-"JavaScript" (https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-"Architecture" (https://img.shields.io/badge/Architecture-Pub%2FSub-8A2BE2.svg?style=for-the-badge)
-"AI" (https://img.shields.io/badge/AI-Adaptive%20Logic-FF6F00.svg?style=for-the-badge)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Algorithms](https://img.shields.io/badge/Study-Algorithms-blue?style=for-the-badge&logo=github)
+
+
 
 This project is a functional Rock Paper Scissors game developed entirely with Vanilla JavaScript. It explores software architecture concepts such as event-driven communication, state management, modular code organization, and basic adaptive AI logic without relying on external frameworks.
 
 The CPU opponent keeps track of the player's previous moves and uses that history to predict their most frequent choice, selecting the corresponding counter-move.
-
-✨ Features
+-
+## ✨ Features
 
 * Event-Driven Architecture: A custom "EventBus" based on the Publish/Subscribe pattern manages communication between game logic, player input, AI decisions, and UI updates, keeping the main components loosely coupled.
 * Modular Game State: The "gameState" object centralizes move validation, round state, and game rules, separating gameplay logic from DOM manipulation.
@@ -25,7 +26,7 @@ The CPU opponent keeps track of the player's previous moves and uses that histor
 * Temporary CSS Animations: Uses "animationend" events to remove animation classes after their execution, allowing visual feedback to be triggered dynamically.
 * Game Reset: The current round state can be cleared through a reset event, allowing the game to start another round while preserving the AI's move history during the session.
 
-🧠 AI Decision Engine
+## 🧠 AI Decision Engine
 
 The CPU currently uses a frequency-based strategy rather than machine learning.
 
@@ -41,7 +42,7 @@ The project also includes a probability calculation method that can be used as a
 
 However, probability analysis is not yet integrated into the CPU's main decision process. The current implementation primarily relies on move frequency and a predefined counter table.
 
-🏗️ Architecture
+## 🏗️ Architecture
 
 The codebase is organized around a few main components:
 
@@ -52,7 +53,7 @@ The codebase is organized around a few main components:
 * "ui": Manages DOM references, player input, displayed text, button states, and CPU reactions.
 * "helperFunctions": Provides reusable utilities for DOM creation, asynchronous delays, temporary CSS classes, overlays, and probability calculations.
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 * Vanilla JavaScript (ES6+): Core game logic, EventBus implementation, AI decision engine, asynchronous operations, and DOM manipulation.
 * CSS3: Visual styling, animations, UI transitions, and responsive layout.
@@ -61,7 +62,7 @@ The codebase is organized around a few main components:
 
 ---
 
-🚧 Current Limitations
+## 🚧 Current Limitations
 
 The project is functional, but several parts are still experimental or incomplete:
 
@@ -72,7 +73,7 @@ The project is functional, but several parts are still experimental or incomplet
 * Limited Game Flow: The current round ends with the input buttons disabled until the game is reset. A more complete round-management system is still needed.
 * Code Organization: Although the application is divided into logical objects, the code can be further reorganized to improve readability, maintainability, and separation of responsibilities.
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 * Enhanced AI Decision Engine: Introduce more sophisticated prediction strategies, probability-based decisions, and behavioral analysis to make the CPU less predictable and more challenging.
 * Weighted Move History: Experiment with prioritizing recent player moves instead of treating the entire session history equally.
