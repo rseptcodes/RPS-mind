@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>rps</title>
+
+    <link rel="stylesheet" href="rps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="rps.js" defer></script>
+</head>
+<body>
+
+    <div id="ai-container" class="ai-container">
+        <p id="ai-reaction" class="ai-reaction"></p>
+    </div>
+
+    <main id="game" class="game">
+
+        <h1 id="game-title" class="game-title">
+            Jokenpo!
+        </h1>
+
+        <p id="ai-move" class="ai-move">
+            AI played: <span id="ai-move-value">---</span>
+        </p>
+
+        <div id="game-result" class="game-result">
+            <span id="game-result-value">Waiting...</span>
+        </div>
+
+        <p id="player-move" class="player-move">
+            You played: <span id="player-move-value">---</span>
+        </p>
+
+    </main>
+	
+    <div id="move-buttons" class="move-buttons">
+
+        <button id="rock-button" class="move-button">
+            <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+
+        <button id="scissors-button" class="move-button">
+            <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+
+        <button id="paper-button" class="move-button">
+            <i class="fa-solid fa-hand"></i>
+        </button>
+
+    </div>
+
+</body>
+</html>
